@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: wallet
+  labels:
+    stack: storiqa
+spec:
+  selector:
+    stack: storiqa
+    app: wallet
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80

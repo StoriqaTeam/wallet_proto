@@ -1,0 +1,28 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: wallet
+  labels:
+    stack: storiqa
+    app: wallet
+spec:
+  selector:
+    matchLabels:
+      app: wallet
+      stack: storiqa
+  replicas: 1
+  template:
+    metadata:
+      name: wallet
+      labels:
+        app: wallet
+        stack: storiqa
+    spec:
+      imagePullSecrets:
+      - name: stq
+      containers:
+      - name: wallet
+        image: storiqateam/walletproof
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
