@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" viewport-fit=cover>
+
+	<title>Storiqa Wallet Preview</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/send_deposit.css">
+	<link rel="stylesheet" href="css/my_wallet.css">
+	<link rel="stylesheet" href="css/flickity.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://zbrutskii.design/demo/stq/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://zbrutskii.design/demo/stq/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://zbrutskii.design/demo/stq/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://zbrutskii.design/demo/stq/assets/favicon/site.webmanifest">
+	<link rel="mask-icon" href="https://zbrutskii.design/demo/stq/assets/favicon/safari-pinned-tab.svg" color="#2fbafd">
+	<link rel="shortcut icon" href="https://zbrutskii.design/demo/stq/assets/favicon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Storiqa Wallet Preview">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="application-name" content="Storiqa Wallet Preview">
+	<meta name="msapplication-TileColor" content="#2fbafd">
+	<meta name="msapplication-config" content="https://zbrutskii.design/demo/stq/assets/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#2fbafd">
+</head>
+<body>
+	
+<div class="global_wrapper">
+
+
+
+<!-- ========================================================================
+	  Top bar
+	 ======================================================================== -->
+	
+	<div class="top_bar">
+		<div class="top_bar_bg"></div>
+
+		<div class="top_bar_left">
+			<a href="#" class="icon back" onclick="history.back(); return false;"></a>
+		</div>
+
+		<div class="top_bar_center">
+			<span class="text white bold size_20">Send to card</span>
+		</div>
+
+		<div class="top_bar_right">
+		</div>
+
+	</div>
+	
+	<div class="blue_bg small"></div>
+
+
+	<div class="main_section send_deposit_2">	
+
+		<div class="account_card black small"><a>
+			<div class="top_section">
+
+				<div class="currency">
+					<span class="text white bold size_20">STQ</span>
+				</div>
+
+				<div class="amount">
+
+					<div class="main">
+						<span class="text white bold size_20">1,361,499.9756</span>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="bottom_section">
+				
+				<div class="address">
+					<span class="address size_16">****9f74927657db3e1127938cc</span>
+				</div>
+
+			</div>
+		</a></div>
+
+		<div class="card main_form">
+			
+			<div class="amount_form_box">
+
+				<div class="amount_wrapper">
+					<div class="form_group">
+						<div class="caption">
+							<span>Amount:</span>
+						</div>
+						<input type="number" class="field">
+					</div>
+
+					<div class="form_group">
+						<div class="caption">
+							<span>Will Be sended:</span>
+						</div>
+						<input type="number" class="field">
+					</div>
+
+					<div class="descr_box">
+						<span class="text black normal size_14">Payment fee: 1 STQ</span>
+					</div>
+				</div>
+
+				<div class="currency_arrow">
+					<div class="text grey normal size_16">
+						<span>STQ</span>
+					</div>
+					<div class="arrow_down_icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.65 2.94153L15.86 0.151534C15.54 -0.168466 15 0.0515345 15 0.501534V2.29153H1C0.45 2.29153 0 2.74153 0 3.29153C0 3.84153 0.45 4.29153 1 4.29153H15V6.08153C15 6.53153 15.54 6.75153 15.85 6.43153L18.64 3.64153C18.84 3.45153 18.84 3.13153 18.65 2.94153Z" transform="translate(15.2915 3) rotate(90)" fill="black" fill-opacity="0.3"/>
+						</svg>
+					</div>
+					<div class="text grey normal size_16">
+						<span>USD</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="setup_fee">
+
+				<div class="setup_button">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 14V16H6V14H0ZM0 2V4H10V2H0ZM10 18V16H18V14H10V12H8V18H10ZM4 6V8H0V10H4V12H6V6H4ZM18 10V8H8V10H18ZM12 6H14V4H18V2H14V0H12V6Z" transform="translate(3 3)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="text black normal size_16">
+						<span>Setup fee</span>
+					</div>
+				</div>
+
+				<div class="setup_fee_section">
+					
+					<div class="caption">
+						<span>Fee Settings</span>
+					</div>
+
+					<div class="fee_slider">
+						<img src="assets/images/fee_settings.jpg">
+					</div>
+
+					<div class="descr_box">
+
+						<div class="text grey normal size_14">
+							<span>Median Wait: 48 s</span>
+						</div>
+
+						<div class="text black normal size_14">
+							<span>Payment fee: 1 STQ</span>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="form_box card_add">
+				<div class="caption_box">
+					<div class="caption">
+						<span>Recipient Card</span>
+					</div>
+					<div class="caption link">
+						<a href="#">Scan Card</a>
+					</div>
+				</div>
+
+				<input type="number" class="field">
+			</div>
+			
+			<div class="button_box">
+				<a class="button blue open_send_popup">Send</a>
+			</div>
+
+		</div>
+
+		<a href="#" class="button white" onclick="history.back(); return false;">Cancel</a>
+
+	</div>
+
+
+
+<!-- ========================================================================
+	  Bottom bar
+	 ======================================================================== -->
+
+	<div class="bottom_bar">
+		<div class="bar_wrapper">
+
+			<div class="bar_item"><a href="my_wallet.html">
+				<div class="icon">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 13V5C7 3.9 7.89 3 9 3H18V2C18 0.9 17.1 0 16 0H2C0.89 0 0 0.9 0 2V16C0 17.1 0.89 18 2 18H16C17.1 18 18 17.1 18 16V15H9C7.89 15 7 14.1 7 13Z" transform="translate(3 3)"/>
+						<path d="M1 0C0.45 0 0 0.45 0 1V7C0 7.55 0.45 8 1 8H10V0H1ZM4 5.5C3.17 5.5 2.5 4.83 2.5 4C2.5 3.17 3.17 2.5 4 2.5C4.83 2.5 5.5 3.17 5.5 4C5.5 4.83 4.83 5.5 4 5.5Z" transform="translate(12 8)"/>
+					</svg>
+				</div>
+			</a></div>
+
+			<div class="bar_item"><a href="deposit.html">
+				<div class="icon">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16 9V16H2V9H0V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V9H16ZM10 9.67L12.59 7.09L14 8.5L9 13.5L4 8.5L5.41 7.09L8 9.67V0H10V9.67Z" transform="translate(3 3)"/>
+					</svg>
+				</div>
+			</a></div>
+
+			<div class="bar_item active"><a href="send.html">
+				<div class="icon">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M5.41 6.40997L8 3.83002V13.5H10V3.83002L12.59 6.40997L14 5L9 0L4 5L5.41 6.40997ZM16 16V9H18V16C18 17.1 17.1 18 16 18H2C0.900002 18 0 17.1 0 16V9H2V16H16Z" transform="translate(3 3)"/>
+					</svg>
+				</div>
+			</a></div>
+
+			<div class="bar_item"><a href="exchange.html">
+				<div class="icon">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 0H20V2H12V0ZM12 5.5H20V7.5H12V5.5ZM12 11H20V13H12V11ZM0 6.5C0 10.08 2.92 13 6.5 13H7V15L10 12L7 9V11H6.5C4.02 11 2 8.98 2 6.5C2 4.02 4.02 2 6.5 2H10V0H6.5C2.92 0 0 2.92 0 6.5Z" transform="translate(2 4.99994)"/>
+					</svg>
+				</div>
+			</a></div>
+
+			<div class="bar_item open_drawer">
+				<div class="icon">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 14H18V12H0V14ZM0 8H18V6H0V8ZM0 0V2H18V0H0Z" transform="translate(3 5)"/>
+					</svg>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+<!-- ========================================================================
+	  Nav drawer
+	 ======================================================================== -->
+
+	<div class="popup_filter"></div>
+
+	<div class="nav_drawer_wrapper is_popup">
+		<div class="space"></div>
+		<div class="main_drawer">
+
+			<div class="popup_close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.8925 0.3025C12.5025 -0.0874999 11.8725 -0.0874999 11.4825 0.3025L6.5925 5.1825L1.7025 0.2925C1.3125 -0.0975002 0.6825 -0.0975002 0.2925 0.2925C-0.0975002 0.6825 -0.0975002 1.3125 0.2925 1.7025L5.1825 6.5925L0.2925 11.4825C-0.0975002 11.8725 -0.0975002 12.5025 0.2925 12.8925C0.6825 13.2825 1.3125 13.2825 1.7025 12.8925L6.5925 8.0025L11.4825 12.8925C11.8725 13.2825 12.5025 13.2825 12.8925 12.8925C13.2825 12.5025 13.2825 11.8725 12.8925 11.4825L8.0025 6.5925L12.8925 1.7025C13.2725 1.3225 13.2725 0.6825 12.8925 0.3025Z" transform="translate(5.40747 5.40759)" fill="black" fill-opacity="0.35"/>
+				</svg>
+			</div>
+			
+			<div class="user_info_box">
+				
+				<div class="avatar_box">
+					<img src="assets/images/avatar.png">
+				</div>
+
+				<div class="info_box">
+					<div class="name">
+						<span class="text black semi size_18">User Name</span>
+					</div>
+					<div class="status">
+						<span class="text grey normal size_16">Verified</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main_nav">
+				
+				<div class="nav_item"><a href="my_wallet.html" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18 4.28V2C18 0.9 17.1 0 16 0H2C0.89 0 0 0.9 0 2V16C0 17.1 0.89 18 2 18H16C17.1 18 18 17.1 18 16V13.72C18.59 13.37 19 12.74 19 12V6C19 5.26 18.59 4.63 18 4.28ZM17 6V12H10V6H17ZM2 16V2H16V4H10C8.9 4 8 4.9 8 6V12C8 13.1 8.9 14 10 14H16V16H2Z" transform="translate(3 3.00012)" fill="#02A7F7"/>
+							<path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" transform="translate(14.5 10.5002)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">My wallet</span>
+					</div>
+				</a>
+				<a href="add_account.html" class="add_new">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM14 11H11V14C11 14.55 10.55 15 10 15C9.45 15 9 14.55 9 14V11H6C5.45 11 5 10.55 5 10C5 9.45 5.45 9 6 9H9V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9H14C14.55 9 15 9.45 15 10C15 10.55 14.55 11 14 11Z" transform="translate(2 1.99988)" fill="#CED4DA"/>
+					 </svg>
+				</a></div>
+				
+				<div class="nav_item"><a href="favorites.html" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" transform="translate(2 2)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Favirotes transactions</span>
+					</div>
+				</a></div>
+				
+				<div class="nav_item"><a href="history.html" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.5515 0.00349014C6.46153 -0.13651 2.29153 3.95349 2.29153 9.00349H0.501534C0.0515345 9.00349 -0.168466 9.54349 0.151534 9.85349L2.94153 12.6535C3.14153 12.8535 3.45153 12.8535 3.65153 12.6535L6.44153 9.85349C6.75153 9.54349 6.53153 9.00349 6.08153 9.00349H4.29153C4.29153 5.10349 7.47153 1.95349 11.3915 2.00349C15.1115 2.05349 18.2415 5.18349 18.2915 8.90349C18.3415 12.8135 15.1915 16.0035 11.2915 16.0035C9.68153 16.0035 8.19153 15.4535 7.01153 14.5235C6.61153 14.2135 6.05153 14.2435 5.69153 14.6035C5.27153 15.0235 5.30153 15.7335 5.77153 16.0935C7.29153 17.2935 9.20153 18.0035 11.2915 18.0035C16.3415 18.0035 20.4315 13.8335 20.2915 8.74349C20.1615 4.05349 16.2415 0.13349 11.5515 0.00349014Z" transform="translate(1.7085 2.99646)" fill="#02A7F7"/>
+							<path d="M0.75 0C0.34 0 0 0.34 0 0.75V4.43C0 4.78 0.19 5.11 0.49 5.29L3.61 7.14C3.97 7.35 4.43 7.23 4.64 6.88C4.85 6.52 4.73 6.06 4.38 5.85L1.5 4.14V0.74C1.5 0.34 1.16 0 0.75 0Z" transform="translate(12 7.99976)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Transactions history</span>
+					</div>
+				</a></div>
+
+				<hr>
+
+				<div class="nav_item"><a href="deposit.html" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 9V16H2V9H0V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V9H16ZM10 9.67L12.59 7.09L14 8.5L9 13.5L4 8.5L5.41 7.09L8 9.67V0H10V9.67Z" transform="translate(3 3)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Deposit</span>
+					</div>
+				</a></div>
+
+				<div class="nav_item"><a href="send.html" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M5.41003 6.40991L8 3.83008V13.5H10V3.83008L12.59 6.40991L14 5L9 0L4 5L5.41003 6.40991ZM16 16V9H18V16C18 17.1001 17.1 18 16 18H2C0.900024 18 0 17.1001 0 16V9H2V16H16Z" transform="translate(3 3.00012)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Send / Withdraw</span>
+					</div>
+				</a></div>
+
+				<div class="nav_item"><a href="exchange.html" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12 0H20V2H12V0ZM12 5.5H20V7.5H12V5.5ZM12 11H20V13H12V11ZM0 6.5C0 10.08 2.92 13 6.5 13H7V15L10 12L7 9V11H6.5C4.02 11 2 8.98 2 6.5C2 4.02 4.02 2 6.5 2H10V0H6.5C2.92 0 0 2.92 0 6.5Z" transform="translate(2 4.99988)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Exchange</span>
+					</div>
+				</a></div>
+
+				<hr>
+
+				<div class="nav_item"><a href="#" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.1593 10.98C17.1993 10.66 17.2293 10.34 17.2293 10C17.2293 9.66 17.1993 9.34 17.1593 9.02L19.2693 7.37C19.4593 7.22 19.5093 6.95 19.3893 6.73L17.3893 3.27C17.2993 3.11 17.1293 3.02 16.9493 3.02C16.8893 3.02 16.8293 3.03 16.7793 3.05L14.2893 4.05C13.7693 3.65 13.2093 3.32 12.5993 3.07L12.2193 0.42C12.1893 0.18 11.9793 0 11.7293 0H7.72933C7.47933 0 7.26933 0.18 7.23933 0.42L6.85933 3.07C6.24933 3.32 5.68933 3.66 5.16933 4.05L2.67933 3.05C2.61933 3.03 2.55933 3.02 2.49933 3.02C2.32933 3.02 2.15933 3.11 2.06933 3.27L0.0693315 6.73C-0.0606685 6.95 -0.000668362 7.22 0.189332 7.37L2.29933 9.02C2.25933 9.34 2.22933 9.67 2.22933 10C2.22933 10.33 2.25933 10.66 2.29933 10.98L0.189332 12.63C-0.000668362 12.78 -0.0506685 13.05 0.0693315 13.27L2.06933 16.73C2.15933 16.89 2.32933 16.98 2.50933 16.98C2.56933 16.98 2.62933 16.97 2.67933 16.95L5.16933 15.95C5.68933 16.35 6.24933 16.68 6.85933 16.93L7.23933 19.58C7.26933 19.82 7.47933 20 7.72933 20H11.7293C11.9793 20 12.1893 19.82 12.2193 19.58L12.5993 16.93C13.2093 16.68 13.7693 16.34 14.2893 15.95L16.7793 16.95C16.8393 16.97 16.8993 16.98 16.9593 16.98C17.1293 16.98 17.2993 16.89 17.3893 16.73L19.3893 13.27C19.5093 13.05 19.4593 12.78 19.2693 12.63L17.1593 10.98ZM15.1793 9.27C15.2193 9.58 15.2293 9.79 15.2293 10C15.2293 10.21 15.2093 10.43 15.1793 10.73L15.0393 11.86L15.9293 12.56L17.0093 13.4L16.3093 14.61L15.0393 14.1L13.9993 13.68L13.0993 14.36C12.6693 14.68 12.2593 14.92 11.8493 15.09L10.7893 15.52L10.6293 16.65L10.4293 18H9.02933L8.83933 16.65L8.67933 15.52L7.61933 15.09C7.18933 14.91 6.78933 14.68 6.38933 14.38L5.47933 13.68L4.41933 14.11L3.14933 14.62L2.44933 13.41L3.52933 12.57L4.41933 11.87L4.27933 10.74C4.24933 10.43 4.22933 10.2 4.22933 10C4.22933 9.8 4.24933 9.57 4.27933 9.27L4.41933 8.14L3.52933 7.44L2.44933 6.6L3.14933 5.39L4.41933 5.9L5.45933 6.32L6.35933 5.64C6.78933 5.32 7.19933 5.08 7.60933 4.91L8.66933 4.48L8.82933 3.35L9.02933 2H10.4193L10.6093 3.35L10.7693 4.48L11.8293 4.91C12.2593 5.09 12.6593 5.32 13.0593 5.62L13.9693 6.32L15.0293 5.89L16.2993 5.38L16.9993 6.59L15.9293 7.44L15.0393 8.14L15.1793 9.27Z" transform="translate(2.27051 2)" fill="#02A7F7"/>
+							<path d="M4 0C1.79 0 0 1.79 0 4C0 6.21 1.79 8 4 8C6.21 8 8 6.21 8 4C8 1.79 6.21 0 4 0ZM4 6C2.9 6 2 5.1 2 4C2 2.9 2.9 2 4 2C5.1 2 6 2.9 6 4C6 5.1 5.1 6 4 6Z" transform="translate(8 8)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Settings</span>
+					</div>
+				</a></div>
+
+				<div class="nav_item"><a href="#" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" transform="translate(2 2)" fill="#02A7F7"/>
+							<path d="M2 0H0V2H2V0Z" transform="translate(11 16)" fill="#02A7F7"/>
+							<path d="M4.47069 0.0439273C2.41069 -0.256073 0.590692 1.01393 0.0406922 2.83393C-0.139308 3.41393 0.300692 4.00393 0.910692 4.00393H1.11069C1.52069 4.00393 1.85069 3.71393 1.99069 3.33393C2.31069 2.44393 3.26069 1.83393 4.29069 2.05393C5.24069 2.25393 5.94069 3.18393 5.86069 4.15393C5.76069 5.49393 4.24069 5.78393 3.41069 7.03393C3.41069 7.04393 3.40069 7.04393 3.40069 7.05393C3.39069 7.07393 3.38069 7.08393 3.37069 7.10393C3.28069 7.25393 3.19069 7.42393 3.12069 7.60393C3.11069 7.63393 3.09069 7.65393 3.08069 7.68393C3.07069 7.70393 3.07069 7.72393 3.06069 7.75393C2.94069 8.09393 2.86069 8.50393 2.86069 9.00393H3.99069H4.86069C4.86069 8.58393 4.97069 8.23393 5.14069 7.93393C5.16069 7.90393 5.17069 7.87393 5.19069 7.84393C5.27069 7.70393 5.37069 7.57393 5.47069 7.45393C5.48069 7.44393 5.49069 7.42393 5.50069 7.41393C5.60069 7.29393 5.71069 7.18393 5.83069 7.07393C6.79069 6.16393 8.09069 5.42393 7.82069 3.51393C7.58069 1.77393 6.21069 0.303927 4.47069 0.0439273Z" transform="translate(8.13916 5.99609)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Support & Help</span>
+					</div>
+				</a></div>
+
+				<div class="nav_item"><a href="#" class="nav_link">
+					<div class="icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.79 13.29C8.18 13.68 8.81 13.68 9.2 13.29L12.79 9.7C13.18 9.31 13.18 8.68 12.79 8.29L9.2 4.7C8.81 4.31 8.18 4.31 7.79 4.7C7.4 5.09 7.4 5.72 7.79 6.11L9.67 8H1C0.45 8 0 8.45 0 9C0 9.55 0.45 10 1 10H9.67L7.79 11.88C7.4 12.27 7.41 12.91 7.79 13.29ZM16 0H2C0.89 0 0 0.9 0 2V5C0 5.55 0.45 6 1 6C1.55 6 2 5.55 2 5V3C2 2.45 2.45 2 3 2H15C15.55 2 16 2.45 16 3V15C16 15.55 15.55 16 15 16H3C2.45 16 2 15.55 2 15V13C2 12.45 1.55 12 1 12C0.45 12 0 12.45 0 13V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0Z" transform="translate(3 3)" fill="#02A7F7"/>
+						</svg>
+					</div>
+					<div class="title">
+						<span class="text black medium size_16">Log Out</span>
+					</div>
+				</a></div>
+
+			</div>
+
+		</div>
+		
+	</div>
+
+
+<!-- ========================================================================
+	  Server popup
+	 ======================================================================== -->
+	
+	<div class="server_popup">
+		<div class="section_1">
+			<div class="text grey normal size_16">
+				<span>Waiting for server response...</span>
+			</div>
+			<div class="spinner">
+				<img src="assets/images/spinner.png" width="20" height="20">
+			</div>
+		</div>
+		<div class="section_2">
+			<a href="send_3.html" class="button blue">Confirm Transaction</a>
+			<a class="button white server_cencel">Cancel</a>
+		</div>
+	</div>
+
+
+</div>
+
+
+<script>
+	$('.setup_button').click(function(){
+		$(this).addClass('hide');
+		$('.setup_fee_section').addClass('show');
+	});
+
+	$('.open_send_popup').click(function(){
+		$('body').addClass('fix');
+		$('.popup_filter').addClass('show');
+		$('.server_popup').show();
+	});
+
+	$('.server_cencel').click(function(){
+		$('body').removeClass('fix');
+		$('.popup_filter').removeClass('show');
+		$('.server_popup').hide();
+	});
+</script>
+
+</body>
+</html>

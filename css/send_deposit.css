@@ -1,0 +1,226 @@
+/* ==========================================================================
+	send money
+   ========================================================================== */
+.send_deposit_1 {
+  padding: 15px 10px !important; }
+
+.send_deposit_2 {
+  padding-left: 10px;
+  padding-right: 10px; }
+  .send_deposit_2 .main_form {
+    margin-top: 25px;
+    padding: 28px 0; }
+  .send_deposit_2 .amount_form_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 24px;
+    border-bottom: 1px solid #e9ecef; }
+    .send_deposit_2 .amount_form_box .amount_wrapper {
+      flex: 1;
+      padding-right: 20px; }
+    .send_deposit_2 .amount_form_box .form_group {
+      padding-bottom: 18px; }
+      .send_deposit_2 .amount_form_box .form_group .caption {
+        padding-bottom: 12px; }
+  .send_deposit_2.by_btc .amount_form_box {
+    border-bottom: none; }
+  .send_deposit_2 .setup_fee {
+    border-bottom: 1px solid #e9ecef; }
+    .send_deposit_2 .setup_fee .setup_button {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      padding: 0 20px;
+      overflow: hidden;
+      visibility: visible;
+      opacity: 1;
+      transition: height .32s, opacity .24s, visibility .32s; }
+      .send_deposit_2 .setup_fee .setup_button .icon {
+        margin-right: 20px; }
+      .send_deposit_2 .setup_fee .setup_button.hide {
+        height: 0;
+        visibility: hidden;
+        opacity: 0; }
+    .send_deposit_2 .setup_fee .setup_fee_section {
+      height: 0;
+      padding: 0 20px;
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+      transition: height .32s, opacity .24s, visibility .32s; }
+      .send_deposit_2 .setup_fee .setup_fee_section.show {
+        visibility: visible;
+        height: auto;
+        padding: 26px 20px 24px;
+        opacity: 1; }
+      .send_deposit_2 .setup_fee .setup_fee_section .caption {
+        padding-bottom: 6px; }
+      .send_deposit_2 .setup_fee .setup_fee_section .fee_slider {
+        padding-bottom: 18px; }
+        .send_deposit_2 .setup_fee .setup_fee_section .fee_slider img {
+          width: 100%; }
+      .send_deposit_2 .setup_fee .setup_fee_section .descr_box {
+        display: flex;
+        justify-content: space-between; }
+        .send_deposit_2 .setup_fee .setup_fee_section .descr_box .black {
+          text-align: right; }
+  .send_deposit_2 .currency_arrow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 38px; }
+    .send_deposit_2 .currency_arrow .arrow_down_icon {
+      padding: 20px 0 18px; }
+  .send_deposit_2 .form_box.card_add {
+    padding: 25px 20px 28px; }
+    .send_deposit_2 .form_box.card_add .caption_box {
+      padding-bottom: 12px; }
+  .send_deposit_2 .button_box {
+    padding: 0 20px; }
+  .send_deposit_2 .button.white {
+    margin: 10px 0; }
+
+/* ==========================================================================
+	deposit account
+   ========================================================================== */
+.deposit_card_info {
+  padding: 26px 20px 28px; }
+  .deposit_card_info .caption_box {
+    padding-bottom: 12px; }
+  .deposit_card_info .double {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px; }
+    .deposit_card_info .double .form_group {
+      width: calc( 50% - 10px); }
+
+.deposit_crypto .will_be_dep_box {
+  padding: 0 20px 24px;
+  border-bottom: 1px solid #e9ecef; }
+  .deposit_crypto .will_be_dep_box .form_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .deposit_crypto .will_be_dep_box .form_box .form_item {
+      flex: 1; }
+    .deposit_crypto .will_be_dep_box .form_box .currency_label {
+      padding-left: 20px; }
+  .deposit_crypto .will_be_dep_box .descr_box {
+    padding-top: 16px; }
+
+.deposit_crypto .period_payment {
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef; }
+  .deposit_crypto .period_payment .bold {
+    padding-left: 10px; }
+
+.deposit_crypto .recip_address {
+  padding: 24px 20px 0; }
+
+.deposit_crypto .recip_qr {
+  padding: 23px 20px 0; }
+
+.deposit_crypto .caption_box {
+  padding-bottom: 12px; }
+
+/* ==========================================================================
+	exchange
+   ========================================================================== */
+.main_section.exchange {
+  padding-left: 0;
+  padding-right: 0; }
+  .main_section.exchange .exchange_slider {
+    /*  Slider
+   ========================================================================== */ }
+    .main_section.exchange .exchange_slider .flickity-viewport {
+      height: 175px !important;
+      padding-bottom: 25px !important; }
+    .main_section.exchange .exchange_slider .slide_item {
+      width: calc( 100% - 40px);
+      padding: 0 3px; }
+  .main_section.exchange .card {
+    margin: 0 10px; }
+    .main_section.exchange .card .field_item {
+      padding: 0 20px 28px;
+      border-bottom: 1px solid #e9ecef; }
+    .main_section.exchange .card .amount_form_box {
+      padding-top: 26px;
+      border-bottom: none; }
+
+/* ==========================================================================
+	server popup
+   ========================================================================== */
+.server_popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 152px;
+  padding: 0 30px;
+  z-index: 9991;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px 16px 0 0;
+  background: #fff;
+  transition: visibility .5s, transform .5s;
+  animation: confirm_height 4s; }
+  .server_popup .section_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 126px;
+    opacity: 0;
+    animation: confirm_section_1 4s; }
+    .server_popup .section_1 .text {
+      margin-right: 10px; }
+    .server_popup .section_1 .spinner {
+      width: 20px;
+      height: 20px;
+      animation: spinner_rotate .55s infinite linear; }
+  .server_popup .section_2 {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    height: 152px;
+    padding-top: 32px;
+    visibility: visible;
+    opacity: 1;
+    animation: confirm_section_2 5s; }
+    .server_popup .section_2 .button {
+      margin-bottom: 10px; }
+
+@keyframes confirm_height {
+  0% {
+    height: 126px; }
+  90% {
+    height: 126px; }
+  100% {
+    height: 152px; } }
+
+@keyframes confirm_section_1 {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes spinner_rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+
+@keyframes confirm_section_2 {
+  0% {
+    opacity: 0;
+    visibility: hidden; }
+  80% {
+    opacity: 0;
+    visibility: hidden; }
+  100% {
+    opacity: 1;
+    visibility: visible; } }

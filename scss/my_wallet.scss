@@ -1,0 +1,224 @@
+@import 'vars.scss';
+
+
+/* ==========================================================================
+	My wallet 1 screen (main)
+   ========================================================================== */
+
+.my_wallet_1 {
+	padding-left:   10px;
+	padding-right:  10px;
+	padding-bottom: 72px;
+
+	.account_card.black { margin-bottom: 25px; }
+	.account_card.micro { margin-bottom: 10px; }
+
+	.whitespace {
+		width: 100%;
+		height: 15px;
+	}
+}
+
+
+/* ==========================================================================
+	My wallet 2 screen (account info)
+   ========================================================================== */
+
+.my_wallet_2 {
+
+
+/*  Slider
+   ========================================================================== */
+
+	.flickity-viewport {
+		height: 232px !important;
+	    padding-bottom: 32px !important;
+	}
+
+	.slide_item {
+		width: calc( 100% - 60px );
+		padding: 0 5px;
+	}
+
+
+/*  Account address
+   ========================================================================== */
+
+	.account_address {
+		padding: 26px 20px 28px;
+		border-bottom: 0.5px solid #e9ecef;
+
+		.caption_box {
+			padding-bottom: 12px;
+		}
+
+		.address_box {
+			height: 43px;
+
+			border-radius: 6px;
+			background: #F1F3F5;
+
+			text-align: center;
+			line-height: 40px;
+		}
+	}
+
+
+/*  Last transactions
+   ========================================================================== */
+
+	.last_trans {
+		.caption_box {
+			padding: 24px 20px 0;
+		}
+	}
+}
+
+
+
+/* ==========================================================================
+	My wallet 3 screen (add account)
+   ========================================================================== */
+
+.my_wallet_3 {
+	padding-left: 10px;
+	padding-right: 10px;
+
+
+/*  Tabs
+   ========================================================================== */
+
+    .tabs_box {
+    	display: flex;
+    	height: 50px;
+		border-bottom: 1px solid #e9ecef;
+
+		.tab {
+			position: relative;
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			border-bottom: 3px solid transparent;
+			transition:
+				border .24s,
+				color .24s;
+
+			color: rgba(0, 0, 0, .5);
+
+			.icon {
+				margin: 5px 6px 0 0;
+			
+				svg {
+					fill: rgba(0, 0, 0, .5);
+					transition: fill .24s;
+				}
+			}
+
+			.text { margin-top: 4px; }
+
+			&.active {
+				border-bottom-color: $blue_3;
+				color: $blue_3;
+
+				.icon svg { fill: $blue_3; }
+			}
+
+			&:first-child::after {
+				content: '';
+				position: absolute;
+				  top:    10px;
+				  right:  0;
+				  bottom: 7px;
+				width: 1px;
+				background-color: #e9ecef;
+				
+			}
+		}
+    }
+
+
+/*  Tab content
+   ========================================================================== */
+
+    .tabs_content {
+		.tab {
+			display: none;
+			padding: 26px 20px 0;
+
+			&.active {
+				display: block;
+			}
+		}
+
+		.caption { padding-bottom: 14px; }
+
+		.select_box {
+			padding-bottom: 22px;
+
+			input[type='radio'] {
+				position: absolute;
+				visibility: hidden;
+
+				&:checked + label {
+					background-color: $blue_1;
+				}
+			}
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+				height: 40px;
+				padding: 10px 12px;
+
+				border-radius: 6px;
+				background-color: #f1f3f5;
+				transition: background-color .24s;
+			}
+		}
+
+		.currency_type {
+			display: flex;
+			overflow: hidden;
+			height: 40px;
+
+			border-radius: 6px;
+			border: 1px solid #e9ecef;
+			background-color: #fff;
+
+			input[type='radio'] {
+				position: absolute;
+				visibility: hidden;
+
+				&:checked + label {
+					border-color: $blue_1;
+					background-color: $blue_1;
+					color: #000;
+				}
+			}
+
+			label {
+				flex: 1;
+				display: block;
+				margin-bottom: 10px;
+				height: 40px;
+				padding: 10px 12px;
+
+				background-color: #fff;
+				border-right: 1px solid #e9ecef;
+
+				color: rgba(0, 0, 0, .5);
+				text-align: center;
+				transition: background-color .24s;
+
+				&:last-child { border-right: 0; }
+			}
+		}
+
+		.field,
+		.currency_type { margin-bottom: 32px; }
+    }
+
+	.button { margin-bottom: 10px; }
+}

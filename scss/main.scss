@@ -1,0 +1,99 @@
+
+/* ==========================================================================
+	Reset
+   ========================================================================== */
+
+@import 'reset.scss';
+@import 'vars.scss';
+
+
+/* ==========================================================================
+	Fonts
+   ========================================================================== */
+
+@font-face {
+    src: url('../assets/fonts/SFProDisplay-Bold.woff') format('woff');
+    font-style: normal;
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('../assets/fonts/SFProDisplay-Semibold.woff') format('woff');
+    font-style: normal;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+}
+
+@font-face {
+    src: url('../assets/fonts/SFProDisplay-Light.woff') format('woff');
+    font-style: normal;
+    font-family: 'SF Pro Display';
+    font-weight: 200;
+}
+
+@font-face {
+    src: url('../assets/fonts/SFProDisplay-Medium.woff') format('woff');
+    font-style: normal;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url('../assets/fonts/SFProDisplay-Regular.woff') format('woff');
+    font-style: normal;
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+}
+
+
+/* ==========================================================================
+	Screen
+   ========================================================================== */
+
+html, body { min-height: 100%; }
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #fff;
+	font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
+
+	&.fix { overflow: hidden; }
+}
+
+.global_wrapper {
+	position: relative;
+	width: 	100%;
+	height: 100%;
+	min-width: 	320px;
+	min-height: 480px;
+	
+	background-color: #fff;
+}
+
+
+/* ==========================================================================
+	main content
+   ========================================================================== */
+
+.main_section {
+	position: relative;
+ // padding-top: 88px;
+	padding-top: 68px;
+	padding-bottom: 52px;
+	z-index: 100;
+
+	&.nopadding  { padding-top: 0; }
+	&.bigpadding { padding-top: 102px; }
+}
+
+
+
+@import 'components.scss';
+@import 'popups.scss';
+
+
+

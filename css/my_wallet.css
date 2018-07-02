@@ -1,0 +1,142 @@
+/* ==========================================================================
+	My wallet 1 screen (main)
+   ========================================================================== */
+.my_wallet_1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 72px; }
+  .my_wallet_1 .account_card.black {
+    margin-bottom: 25px; }
+  .my_wallet_1 .account_card.micro {
+    margin-bottom: 10px; }
+  .my_wallet_1 .whitespace {
+    width: 100%;
+    height: 15px; }
+
+/* ==========================================================================
+	My wallet 2 screen (account info)
+   ========================================================================== */
+.my_wallet_2 {
+  /*  Slider
+   ========================================================================== */
+  /*  Account address
+   ========================================================================== */
+  /*  Last transactions
+   ========================================================================== */ }
+  .my_wallet_2 .flickity-viewport {
+    height: 232px !important;
+    padding-bottom: 32px !important; }
+  .my_wallet_2 .slide_item {
+    width: calc( 100% - 60px);
+    padding: 0 5px; }
+  .my_wallet_2 .account_address {
+    padding: 26px 20px 28px;
+    border-bottom: 0.5px solid #e9ecef; }
+    .my_wallet_2 .account_address .caption_box {
+      padding-bottom: 12px; }
+    .my_wallet_2 .account_address .address_box {
+      height: 43px;
+      border-radius: 6px;
+      background: #F1F3F5;
+      text-align: center;
+      line-height: 40px; }
+  .my_wallet_2 .last_trans .caption_box {
+    padding: 24px 20px 0; }
+
+/* ==========================================================================
+	My wallet 3 screen (add account)
+   ========================================================================== */
+.my_wallet_3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  /*  Tabs
+   ========================================================================== */
+  /*  Tab content
+   ========================================================================== */ }
+  .my_wallet_3 .tabs_box {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #e9ecef; }
+    .my_wallet_3 .tabs_box .tab {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 3px solid transparent;
+      transition: border .24s, color .24s;
+      color: rgba(0, 0, 0, 0.5); }
+      .my_wallet_3 .tabs_box .tab .icon {
+        margin: 5px 6px 0 0; }
+        .my_wallet_3 .tabs_box .tab .icon svg {
+          fill: rgba(0, 0, 0, 0.5);
+          transition: fill .24s; }
+      .my_wallet_3 .tabs_box .tab .text {
+        margin-top: 4px; }
+      .my_wallet_3 .tabs_box .tab.active {
+        border-bottom-color: #2FBAFD;
+        color: #2FBAFD; }
+        .my_wallet_3 .tabs_box .tab.active .icon svg {
+          fill: #2FBAFD; }
+      .my_wallet_3 .tabs_box .tab:first-child::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 0;
+        bottom: 7px;
+        width: 1px;
+        background-color: #e9ecef; }
+  .my_wallet_3 .tabs_content .tab {
+    display: none;
+    padding: 26px 20px 0; }
+    .my_wallet_3 .tabs_content .tab.active {
+      display: block; }
+  .my_wallet_3 .tabs_content .caption {
+    padding-bottom: 14px; }
+  .my_wallet_3 .tabs_content .select_box {
+    padding-bottom: 22px; }
+    .my_wallet_3 .tabs_content .select_box input[type='radio'] {
+      position: absolute;
+      visibility: hidden; }
+      .my_wallet_3 .tabs_content .select_box input[type='radio']:checked + label {
+        background-color: #94DBFE; }
+    .my_wallet_3 .tabs_content .select_box label {
+      display: block;
+      margin-bottom: 10px;
+      height: 40px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      background-color: #f1f3f5;
+      transition: background-color .24s; }
+  .my_wallet_3 .tabs_content .currency_type {
+    display: flex;
+    overflow: hidden;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    background-color: #fff; }
+    .my_wallet_3 .tabs_content .currency_type input[type='radio'] {
+      position: absolute;
+      visibility: hidden; }
+      .my_wallet_3 .tabs_content .currency_type input[type='radio']:checked + label {
+        border-color: #94DBFE;
+        background-color: #94DBFE;
+        color: #000; }
+    .my_wallet_3 .tabs_content .currency_type label {
+      flex: 1;
+      display: block;
+      margin-bottom: 10px;
+      height: 40px;
+      padding: 10px 12px;
+      background-color: #fff;
+      border-right: 1px solid #e9ecef;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      transition: background-color .24s; }
+      .my_wallet_3 .tabs_content .currency_type label:last-child {
+        border-right: 0; }
+  .my_wallet_3 .tabs_content .field,
+  .my_wallet_3 .tabs_content .currency_type {
+    margin-bottom: 32px; }
+  .my_wallet_3 .button {
+    margin-bottom: 10px; }

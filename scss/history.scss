@@ -1,0 +1,28 @@
+
+
+/* ==========================================================================
+	main history page
+   ========================================================================== */
+
+.history_1 {
+	padding-left:  10px;
+	padding-right: 10px;
+
+	.card { margin-bottom: 20px; }
+
+	.title_box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		border-bottom: 1px solid #e9ecef;
+	}
+}
+
+.transaction_info {
+	.icon_success_box {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 26px;
+	}
+}
