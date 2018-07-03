@@ -133,7 +133,7 @@
     /*  Slider
    ========================================================================== */ }
     .main_section.exchange .exchange_slider .flickity-viewport {
-      height: 175px !important;
+      height: 215px !important;
       padding-bottom: 25px !important; }
     .main_section.exchange .exchange_slider .slide_item {
       width: calc( 100% - 40px);
