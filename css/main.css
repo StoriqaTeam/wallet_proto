@@ -834,7 +834,9 @@ select,
     .popup_qr_address .qr_card .title {
       padding-bottom: 20px; }
     .popup_qr_address .qr_card .address {
-      padding-bottom: 26px; }
+      padding-bottom: 26px;
+      overflow: hidden;
+    }
   .popup_qr_address .actions_card {
     margin-top: 2px; }
     .popup_qr_address .actions_card a {

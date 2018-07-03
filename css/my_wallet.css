@@ -39,7 +39,9 @@
       border-radius: 6px;
       background: #F1F3F5;
       text-align: center;
-      line-height: 40px; }
+      line-height: 40px; 
+      overflow: hidden;
+    }
   .my_wallet_2 .last_trans .caption_box {
     padding: 24px 20px 0; }
 
