@@ -12,6 +12,10 @@ var $menu = $('.top_bar');
     }
 });
 
+// disable card detail inputs for deposit_2_card.html
+$('#card_details_input').attr('disabled', 'disabled');
+$('#card_mm_input').attr('disabled', 'disabled');
+$('#card_cvv_input').attr('disabled', 'disabled');
 
 // nav drawer
 
